@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSecure - Ciberseguridad Empresarial</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="CyberSecure Logo">
+            CyberSecure
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#carrito">Carrito <span id="cart-count">0</span></a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>Protege tu Empresa con Soluciones Profesionales</h1>
+        <p>Expertos en ciberseguridad para empresas modernas.</p>
+        <a href="#servicios" class="btn">Ver Servicios</a>
+    </section>
+
+    <section id="acerca" class="about">
+        <h2>¿Quiénes Somos?</h2>
+        <p>Somos un equipo de especialistas en ciberseguridad con más de 10 años de experiencia protegiendo empresas. Nuestro compromiso es tu seguridad digital.</p>
+        <img src="img/audit.jpg" alt="Equipo Cyberseguridad" class="about-img">
+    </section>
+
+    <section id="servicios" class="services">
+        <h2>Servicios de Ciberseguridad</h2>
+        <div class="service-list" id="service-list">
+            <!-- Los servicios se cargan dinámicamente con JS -->
+        </div>
+    </section>
+
+    <section id="carrito" class="cart">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <div id="cart-total"></div>
+        <button id="clear-cart" class="btn-clear">Vaciar Carrito</button>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+        <div id="contact-feedback"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CyberSecure. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="js/cart.js"></script>
+</body>
+</html>
